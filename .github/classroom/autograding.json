@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Ruff Lint Check",
+      "setup": "pip install ruff",
+      "run": "ruff check task_*.py tools/",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Flake8 Check",
+      "setup": "pip install flake8",
+      "run": "flake8 task_*.py tools/",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Task 1 - Journal",
+      "setup": "pip install -r requirements.txt",
+      "run": "echo 'Тестовая заметка' | python task_01.py",
+      "input": "",
+      "output": "Заметка успешно сохранена",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 2 - Project Structure",
+      "setup": "pip install -r requirements.txt",
+      "run": "python task_02.py",
+      "input": "",
+      "output": "Создана корневая папка",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 3 - Config",
+      "setup": "pip install -r requirements.txt && rm -f config.txt",
+      "run": "python task_03.py",
+      "input": "",
+      "output": "создан новый",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 4 - Log Analysis",
+      "setup": "pip install -r requirements.txt && python tools/generate_log.py",
+      "run": "python task_04.py",
+      "input": "",
+      "output": "Статистика логов",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
