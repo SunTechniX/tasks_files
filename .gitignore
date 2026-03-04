@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+journal.txt
+config.txt
+log.txt
+project_root/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
